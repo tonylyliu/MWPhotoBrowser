@@ -13,6 +13,10 @@ MWPhotoBrowser can display one or more images or videos by providing either `UII
 
 The browser can also be used to allow the user to select one or more photos using either the grid or main image view.
 
+upgrades,
+20241217 support iOS 12+
+20241217 change dependency from MBProgressHUD 0.9.2 to MBProgressHUD 1.2.0
+
 [![Alt][screenshot1_thumb]][screenshot1]    [![Alt][screenshot2_thumb]][screenshot2]    [![Alt][screenshot3_thumb]][screenshot3]    [![Alt][screenshot4_thumb]][screenshot4]    [![Alt][screenshot5_thumb]][screenshot5]    [![Alt][screenshot6_thumb]][screenshot6]
 
 [screenshot1_thumb]: https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser1t.png
@@ -28,7 +32,7 @@ The browser can also be used to allow the user to select one or more photos usin
 [screenshot6_thumb]: https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser6t.png
 [screenshot6]: https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser6.png
 
-Works on iOS 7+. All strings are localisable so they can be used in apps that support multiple languages.
+Works on iOS 12+. All strings are localisable so they can be used in apps that support multiple languages.
 
 ## Usage
 
