@@ -5,11 +5,11 @@ platform :ios, '12.0'
 # use_frameworks!
 
 target 'MWPhotoBrowser_Example'  do
-  pod "Tony_MWPhotoBrowser", :path => "../"
+  pod "Tonylyliu_MWPhotoBrowser", :path => "../"
 end
 
 target 'MWPhotoBrowser_Tests'  do
-  pod "Tony_MWPhotoBrowser", :path => "../"
+  pod "Tonylyliu_MWPhotoBrowser", :path => "../"
   
   pod 'Specta'
   pod 'Expecta'
