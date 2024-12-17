@@ -8,7 +8,7 @@
 
 #import <Photos/Photos.h>
 #import "Menu.h"
-#import "SDImageCache.h"
+#import <SDWebImage/SDWebImage.h>
 #import "MWCommon.h"
 
 @implementation Menu
@@ -21,7 +21,7 @@
 		self.title = @"MWPhotoBrowser";
         
         // Clear cache for testing
-        [[SDImageCache sharedImageCache] clearDisk];
+        [[SDImageCache sharedImageCache] clearDiskOnCompletion:nil];
         [[SDImageCache sharedImageCache] clearMemory];
         
         _segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Push", @"Modal", nil]];
@@ -1055,7 +1055,7 @@
 //            photo = [MWPhoto videoWithURL:[[NSURL alloc] initWithString:@"https://scontent.cdninstagram.com/hphotos-xfa1/t50.2886-16/11237510_945154435524423_2137519922_n.mp4"]];
 //            [photos addObject:photo];
 //            thumb = [MWPhoto new];
-//            thumb.isVideo = YES;
+//            thumb.isVideo = true;
 //            [thumbs addObject:thumb];
             
             photo = [MWPhoto photoWithURL:[[NSURL alloc] initWithString:@"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11240463_963135443745570_1519872157_n.jpg"]];
@@ -1338,4 +1338,3 @@
 }
 
 @end
-

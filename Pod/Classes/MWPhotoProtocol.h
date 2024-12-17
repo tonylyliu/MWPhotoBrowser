@@ -12,12 +12,21 @@
 #define MWPHOTO_LOADING_DID_END_NOTIFICATION @"MWPHOTO_LOADING_DID_END_NOTIFICATION"
 #define MWPHOTO_PROGRESS_NOTIFICATION @"MWPHOTO_PROGRESS_NOTIFICATION"
 
-// If you wish to use your own data models for photo then they must conform
-// to this protocol. See instructions for details on each method.
-// Otherwise you can use the MWPhoto object or subclass it yourself to
-// store more information per photo.
+// This protocol defines methods that a photo in the photo browser must implement.
+// Your custom photo class must implement these methods.
 //
-// You can see the MWPhoto class for an example implementation of this protocol
+// Implementing this protocol is easier than subclassing UIView just to provide
+// this data.
+//
+// You can optionally use MWPhoto which already implements this protocol if you
+// want to handle things automatically.
+//
+// See MWPhoto for an example implementation of this protocol.
+//
+// Remember to only load the image in underlyingImage if it is actually needed.
+// You should use decompressed images for display on iOS. The photo browser can
+// tell you when it wants you to load the image and you can clear it if it is
+// no longer needed. See MWPhoto for more information on this.
 //
 @protocol MWPhoto <NSObject>
 
