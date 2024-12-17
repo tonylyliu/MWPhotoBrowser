@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = 'Tonylyliu_MWPhotoBrowser'
-  s.version = '2.1.7'
+  s.version = '2.1.8'
   s.license = 'MIT'
   s.summary = 'A simple iOS photo and video browser with optional grid view, captions and selections.'
   s.ios.deployment_target = '12.0'
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     :git => 'https://github.com/tonylyliu/MWPhotoBrowser.git',
-    :tag => '2.1.7'
+    :tag => '2.1.8'
   }
   s.platform = :ios, '12.0'
   s.source_files = 'Pod/Classes/**/*'
@@ -37,6 +37,12 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
+# disable ARC runtime support for older iOS versions
+  s.pod_target_xcconfig = {
+    'CLANG_ENABLE_OBJC_ARC' => 'YES',
+    'CLANG_ENABLE_OBJC_WEAK' => 'YES',
+    'CLANG_LINK_OBJC_RUNTIME' => 'NO'
+  }
 
   s.dependency 'MBProgressHUD', '~> 1.2'
   s.dependency 'DACircularProgress', '~> 2.3', '>= 2.3.1'
