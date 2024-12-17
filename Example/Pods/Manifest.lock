@@ -11,10 +11,10 @@ PODS:
     - SDWebImage/Core (= 5.20.0)
   - SDWebImage/Core (5.20.0)
   - Specta (1.0.7)
-  - Tonylyliu_MWPhotoBrowser (2.1.5):
-    - DACircularProgress (~> 2.3)
-    - MBProgressHUD (~> 1.0)
-    - SDWebImage (~> 5.0)
+  - Tonylyliu_MWPhotoBrowser (2.1.7):
+    - DACircularProgress (>= 2.3.1, ~> 2.3)
+    - MBProgressHUD (~> 1.2)
+    - SDWebImage (~> 5.18)
 
 DEPENDENCIES:
   - Expecta
@@ -45,7 +45,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  Tonylyliu_MWPhotoBrowser: de24950555f4a220b9fd8783c347b6f213e96de1
+  Tonylyliu_MWPhotoBrowser: ca7ee1f09cd93f1b6d1edf7a17fb7e5c5450735c
 
 PODFILE CHECKSUM: 2636468b985d2b39055fde74e6b0a3dbdb8849a7
 
