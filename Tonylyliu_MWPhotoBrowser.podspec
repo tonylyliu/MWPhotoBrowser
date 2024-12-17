@@ -33,18 +33,12 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'MWPhotoBrowser' => ['Pod/Assets/*.png']
   }
-  s.requires_arc = true
+
 
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
 # disable ARC runtime support for older iOS versions
-  s.pod_target_xcconfig = {
-    'CLANG_ENABLE_OBJC_ARC' => 'YES',
-    'CLANG_ENABLE_OBJC_WEAK' => 'YES',
-    'CLANG_LINK_OBJC_RUNTIME' => 'NO',
-    'IPHONEOS_DEPLOYMENT_TARGET' => '12.0',
-    'IPHONEOS_DEPLOYMENT_TARGET[arch=*]' => '$(inherited)'
-  }
+
 
   s.user_target_xcconfig = {
     'IPHONEOS_DEPLOYMENT_TARGET' => '12.0',
@@ -52,7 +46,7 @@ Pod::Spec.new do |s|
   }
 
   s.dependency 'MBProgressHUD', '~> 1.2'
-  s.dependency 'DACircularProgress', '~> 2.3', '>= 2.3.1'
+  s.dependency 'Tonylyliu_DACircularProgress', '~> 2.3', '>= 2.3.4'
   s.dependency 'SDWebImage', '~> 5.18'
 
 end
