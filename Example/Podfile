@@ -1,14 +1,29 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'MWPhotoBrowser_Example', :exclusive => true do
+# Specify Swift version
+platform :ios, '12.0'
+# use_frameworks!
+
+target 'MWPhotoBrowser_Example'  do
   pod "MWPhotoBrowser", :path => "../"
 end
 
-target 'MWPhotoBrowser_Tests', :exclusive => true do
+target 'MWPhotoBrowser_Tests'  do
   pod "MWPhotoBrowser", :path => "../"
-
+  
   pod 'Specta'
   pod 'Expecta'
-  pod 'FBSnapshotTestCase'
+  pod 'FBSnapshotTestCase/Core', '~> 2.1.4'  # Use Core subspec which is pure Objective-C
   pod 'Expecta+Snapshots'
+end
+
+# Explicitly set build settings for test target
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == 'MWPhotoBrowser_Tests'
+      target.build_configurations.each do |config|
+        config.build_settings['CLANG_ENABLE_MODULES'] = 'NO'  # Disable Swift modules
+      end
+    end
+  end
 end
