@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = 'Tonylyliu_MWPhotoBrowser'
-  s.version = '2.1.9'
+  s.version = '2.2.0'
   s.license = 'MIT'
   s.summary = 'A simple iOS photo and video browser with optional grid view, captions and selections.'
   s.ios.deployment_target = '12.0'
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     :git => 'https://github.com/tonylyliu/MWPhotoBrowser.git',
-    :tag => '2.1.9'
+    :tag => '2.2.0'
   }
   s.platform = :ios, '12.0'
   s.source_files = 'Pod/Classes/**/*'
