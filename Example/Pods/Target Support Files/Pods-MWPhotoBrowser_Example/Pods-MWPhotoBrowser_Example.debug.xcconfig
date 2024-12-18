@@ -1,10 +1,10 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/Expecta+Snapshots" "${PODS_ROOT}/Headers/Public/FBSnapshotTestCase" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/Specta" "${PODS_ROOT}/Headers/Public/Tonylyliu_DACircularProgress" "${PODS_ROOT}/Headers/Public/Tonylyliu_MWPhotoBrowser"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/Expecta+Snapshots" "${PODS_ROOT}/Headers/Public/FBSnapshotTestCase" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/Specta" "${PODS_ROOT}/Headers/Public/Tonylyliu_DACircularProgress" "${PODS_ROOT}/Headers/Public/Tonylyliu_MBProgressHUD" "${PODS_ROOT}/Headers/Public/Tonylyliu_MWPhotoBrowser"
 IPHONEOS_DEPLOYMENT_TARGET = 12.0
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_DACircularProgress" "${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_MWPhotoBrowser"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"MBProgressHUD" -l"SDWebImage" -l"Tonylyliu_DACircularProgress" -l"Tonylyliu_MWPhotoBrowser" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "ImageIO" -framework "MediaPlayer" -framework "QuartzCore" -weak_framework "Photos"
-OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "-F${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "-F${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_DACircularProgress" "-F${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_MWPhotoBrowser"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_DACircularProgress" "${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_MWPhotoBrowser"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"SDWebImage" -l"Tonylyliu_DACircularProgress" -l"Tonylyliu_MBProgressHUD" -l"Tonylyliu_MWPhotoBrowser" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "ImageIO" -framework "MediaPlayer" -framework "QuartzCore" -weak_framework "Photos"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "-F${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_DACircularProgress" "-F${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_MBProgressHUD" "-F${PODS_CONFIGURATION_BUILD_DIR}/Tonylyliu_MWPhotoBrowser"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

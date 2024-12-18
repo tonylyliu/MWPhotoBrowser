@@ -5,16 +5,16 @@ PODS:
     - FBSnapshotTestCase/Core (~> 2.0)
     - Specta (~> 1.0)
   - FBSnapshotTestCase/Core (2.1.4)
-  - MBProgressHUD (1.2.0)
   - SDWebImage (5.20.0):
     - SDWebImage/Core (= 5.20.0)
   - SDWebImage/Core (5.20.0)
   - Specta (1.0.7)
   - Tonylyliu_DACircularProgress (2.3.4)
-  - Tonylyliu_MWPhotoBrowser (2.1.9):
-    - MBProgressHUD (~> 1.2)
+  - Tonylyliu_MBProgressHUD (1.2.1)
+  - Tonylyliu_MWPhotoBrowser (2.2.0):
     - SDWebImage (~> 5.18)
     - Tonylyliu_DACircularProgress (>= 2.3.4, ~> 2.3)
+    - Tonylyliu_MBProgressHUD (>= 1.2.1, ~> 1.2)
 
 DEPENDENCIES:
   - Expecta
@@ -28,10 +28,10 @@ SPEC REPOS:
     - Expecta
     - "Expecta+Snapshots"
     - FBSnapshotTestCase
-    - MBProgressHUD
     - SDWebImage
     - Specta
     - Tonylyliu_DACircularProgress
+    - Tonylyliu_MBProgressHUD
 
 EXTERNAL SOURCES:
   Tonylyliu_MWPhotoBrowser:
@@ -41,11 +41,11 @@ SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
   Tonylyliu_DACircularProgress: e0c69ebed58f2046460838866809205e5662818d
-  Tonylyliu_MWPhotoBrowser: db4a333772623ff3382b1213ddbb9817e4f92988
+  Tonylyliu_MBProgressHUD: 8a0f9c845bf5faa2cc91956ec9565bfcedafdc72
+  Tonylyliu_MWPhotoBrowser: ae2af645d2252839dee788c2260480886356938f
 
 PODFILE CHECKSUM: 9fe0f1b9186d065327223cc648523e0b535f9777
 
